@@ -1,0 +1,59 @@
+/* Custom Navbar Styling */
+.custom-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(to right, #5d5863, gray); /* Gradient background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo {
+    height: 45spx; /* Adjust logo size */
+    margin-right: 10px;
+    width: 200px;
+    background-color: #5d5863;
+  }
+  
+  .navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #fff; /* Make toggler white */
+    border-radius: 5px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover, .nav-link.active {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+  }
+  
+  .navbar-nav {
+    gap: 15px; /* Adds space between menu items */
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-nav {
+      text-align: center;
+    }
+    .navbar-collapse {
+      background-color: gray; /* Transparent background for mobile */
+      padding: 10px;
+    }
+  }
+  

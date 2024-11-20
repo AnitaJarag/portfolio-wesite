@@ -1,0 +1,67 @@
+.frame {
+  background-color: rgba(240, 240, 240, 0.8);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.btn-start, .btn-back {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-start {
+  background-color: gray;
+}
+
+.btn-back {
+  background-color: #6c757d;
+}
+
+.btn-start:hover {
+  background-color: gray;
+}
+
+.btn-back:hover {
+  background-color: #5a6268;
+}
+
+.skill-logo {
+  width: 90px; /* Adjust logo size */
+  height: 90px;
+  margin-bottom: 10px;
+}
+
+.frame p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.frame {
+  text-align: center;
+  color: black;
+}
+
+.frame img {
+  max-width: 50px; /* Ensure the logo fits nicely */
+  margin-bottom: 10px;
+}
+
+.frame * {
+  color: black;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+.text-center {
+  text-align: center;
+}

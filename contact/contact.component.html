@@ -1,0 +1,29 @@
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fas fa-envelope"></i> anitajarag7&#64;gmail.com</p>
+                <div class="social-icons">
+                    <p class="check">Check:
+                        <a href="https://www.linkedin.com/in/anita-jarag-10a107290"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </p>
+                </div>
+                <a href="assets/Anita's CV.pdf" download class="btn1 btn2">DOWNLOAD CV</a>
+            </div>
+            <div class="contact-right">
+                <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+                    <input type="text" name="name" placeholder="Your Name" ngModel required>
+                    <input type="email" name="email" placeholder="Your Email" ngModel required>
+                    <textarea name="message" rows="6" placeholder="Your message" ngModel></textarea>
+                    <button type="submit" class="btn1 btn2" [disabled]="!contactForm.valid">SUBMIT</button>
+                </form>
+                <div id="msgBox" *ngIf="messageSent" class="message-box">Message sent successfully!</div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fa-solid fa-copyright"></i>
+            Copyright to Anita</p>
+    </div>
+</div>

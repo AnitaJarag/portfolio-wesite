@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0056b3;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    border-bottom: 3px solid #007bff;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Event Container */
+.event-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of event frames */
+    justify-content: center; /* Center align all events */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+}
+
+.event-frame {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 48%; /* Adjust width to 48% for two items per row (with gap) */
+    max-width: 1200px; /* Optional: Limit the maximum width for better visuals */
+    text-align: center;
+}
+
+.event-frame:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.event-image {
+    width: 100%;
+    height: 400px; /* Adjusted image height */
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+.caption {
+    padding: 20px;
+}
+
+.caption h4 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.caption p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.caption a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.caption .btn-primary {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.caption .btn-primary:hover {
+    background-color: #003d80;
+}
+
+.caption .btn-danger {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.caption .btn-danger:hover {
+    background-color: #b52b27;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .event-frame {
+        width: 95%; /* Ensures full width on smaller screens */
+    }
+
+    .event-image {
+        height: 200px; /* Reduced image height for smaller screens */
+    }
+}

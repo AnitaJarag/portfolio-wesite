@@ -1,0 +1,73 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Use a clean, modern font */
+    background-color: #121212; /* Fallback color */
+    color: white;
+  }
+  
+  /* Home Page Styles */
+  .home-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .background-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .background-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(60%); /* Darkens the background for text visibility */
+  }
+  
+  .content-left {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: #fff;
+    z-index: 2;
+  }
+  
+  .content-left h1 {
+    font-size: 4em;
+    font-weight: bold;
+    background: -webkit-linear-gradient(45deg, #ff7eb3, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Gradient text effect */
+    margin: 0;
+  }
+  
+  .content-left p {
+    font-size: 1.5em;
+    margin: 20px 0;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .explore-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background: linear-gradient(45deg, black, #ff7eb3);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 118, 173, 0.6);
+    transition: all 0.3s ease
+  }
